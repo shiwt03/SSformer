@@ -36,7 +36,7 @@ python demo/image_demo.py ${IMAGE_FILE} ${CONFIG_FILE} ${CHECKPOINT_FILE} [--dev
 Example: visualize ```SSformer``` on ```CityScapes```: 
 
 ```shell
-python demo/image_demo.py demo/demo.png local_configs/segformer/B1/segformer.b1.512x512.ade.160k.py \
+python demo/image_demo.py demo/demo.png configs/SSformer/SSformer_swin_512x512_160k_ADE20K.py \
 /path/to/checkpoint_file --device cuda:0 --palette cityscapes
 ```
 
