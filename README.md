@@ -1,6 +1,6 @@
 # SSformer
 
-SegFormer is a simple, efficient and powerful semantic segmentation method, as shown in Figure 1.
+
 
 We use [MMSegmentation v0.24.1](https://github.com/open-mmlab/mmsegmentation/tree/v0.24.1) as the codebase.
 
@@ -21,7 +21,7 @@ Example: evaluate ```SSformer``` on ```ADE20K```:
 python tools/test.py configs/SSformer/SSformer_swin_512x512_160k_ADE20K.py /path/to/checkpoint_file
 ```
 ## Training
-Download [weights](https://drive.google.com/drive/folders/1b7bwrInTW4VLEm27YawHOAMSMikga2Ia?usp=sharing) pretrained on ImageNet-1K, and put them in a folder ```pretrained/```.
+Download [weights]() pretrained on ImageNet-22K, and put them in a folder ```pretrained/```.
 Example: train ```SSFormer``` on ```ADE20K```:
 ```
 # Single-gpu training
