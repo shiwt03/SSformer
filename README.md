@@ -31,7 +31,31 @@ ln -s $DATA_ROOT data
 
 ## Dataset Preparation
 
-For dataset preparation, please refer to the guidelines in [link](https://github.com/open-mmlab/mmsegmentation/blob/v0.24.1/docs/en/dataset_prepare.md#prepare-datasets)
+For dataset preparation, please refer to the guidelines in this [link](https://github.com/open-mmlab/mmsegmentation/blob/v0.24.1/docs/en/dataset_prepare.md#prepare-datasets).
+
+It is recommended to symlink the dataset root to `SSformer/data`.
+If your folder structure is different, you may need to change the corresponding paths in config files.
+
+The fold structure is recommended to be:
+```none
+mmsegmentation
+├── data
+│   ├── cityscapes
+│   │   ├── leftImg8bit
+│   │   │   ├── train
+│   │   │   ├── val
+│   │   ├── gtFine
+│   │   │   ├── train
+│   │   │   ├── val
+│   ├── ade
+│   │   ├── ADEChallengeData2016
+│   │   │   ├── annotations
+│   │   │   │   ├── training
+│   │   │   │   ├── validation
+│   │   │   ├── images
+│   │   │   │   ├── training
+│   │   │   │   ├── validation
+```
 
 ### Cityscapes
 
