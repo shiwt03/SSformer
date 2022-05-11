@@ -2,6 +2,8 @@
 
 SSformer is A Lightweight Transformer for Semantic Segmentation.
 
+![image](resources/ssformer.jpg)
+
 We use [MMSegmentation v0.24.1](https://github.com/open-mmlab/mmsegmentation/tree/v0.24.1) as the codebase.
 
 ## Installation
