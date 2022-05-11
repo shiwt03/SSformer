@@ -1,6 +1,6 @@
 # SSformer
 
-
+SSformer is A Lightweight Transformer for Semantic Segmentation.
 
 We use [MMSegmentation v0.24.1](https://github.com/open-mmlab/mmsegmentation/tree/v0.24.1) as the codebase.
 
@@ -8,7 +8,7 @@ We use [MMSegmentation v0.24.1](https://github.com/open-mmlab/mmsegmentation/tre
 
 For install and data preparation, please refer to the guidelines in [MMSegmentation v0.24.1](https://github.com/open-mmlab/mmsegmentation/tree/v0.24.1).
 
-An example (works for me): ```CUDA 11.3``` and  ```pytorch 1.7.1``` 
+An example (works for me): ```CUDA 11.3``` and  ```pytorch 1.10.0``` 
 ```
 pip install mmcv-full==1.4.3
 cd SSFormer && pip install -e . --user
