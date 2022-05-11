@@ -2,7 +2,7 @@
 
 SSformer is A Lightweight Transformer for Semantic Segmentation.
 
-![image](resources/ssformer.jpg)
+<div align=center><img src="resources/ssformer.jpg"></div>
 
 We use [MMSegmentation v0.24.1](https://github.com/open-mmlab/mmsegmentation/tree/v0.24.1) as the codebase.
 
@@ -27,6 +27,23 @@ cd SSformer
 pip install -e .  # or "python setup.py develop"
 mkdir data
 ln -s $DATA_ROOT data
+```
+
+#### Windows(Experimental)
+
+Here is a full script for setting up mmsegmentation with conda and link the dataset path (supposing that your dataset path is
+%DATA_ROOT%. Notice: It must be an absolute path).
+
+```shell
+conda create -n open-mmlab python=3.10 -y
+conda activate open-mmlab
+conda install pytorch=1.11.0 torchvision cudatoolkit=11.3 -c pytorch
+set PATH=full\path\to\your\cpp\compiler;%PATH%
+pip install mmcv
+git clone https://github.com/open-mmlab/mmsegmentation.git
+cd mmsegmentation
+pip install -e .  # or "python setup.py develop"
+mklink /D data %DATA_ROOT%
 ```
 
 ## Dataset Preparation
