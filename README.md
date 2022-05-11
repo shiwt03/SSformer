@@ -2,6 +2,7 @@
 
 SSformer is A Lightweight Transformer for Semantic Segmentation.
 
+SSformer structure:
 <div align=center><img src="resources/ssformer.jpg"></div>
 
 We use [MMSegmentation v0.24.1](https://github.com/open-mmlab/mmsegmentation/tree/v0.24.1) as the codebase.
@@ -86,11 +87,16 @@ to generate `**labelTrainIds.png`.
 # --nproc means 8 process for conversion, which could be omitted as well.
 python tools/convert_datasets/cityscapes.py data/cityscapes --nproc 8
 ```
+Part of SSformer's segmentation results on Cityscapes:
+![image](resources/SSformer_Cityscapes.png)
 
 ### ADE20K
 
 The training and validation set of ADE20K could be download from this [link](http://data.csail.mit.edu/places/ADEchallenge/ADEChallengeData2016.zip).
 We may also download test set from [here](http://data.csail.mit.edu/places/ADEchallenge/release_test.zip).
+
+Part of SSformer's segmentation results on ADE20K:
+![image](resources/SSformer_ADE20K.png)
 
 ## Evaluation
 
