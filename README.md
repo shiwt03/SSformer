@@ -140,3 +140,7 @@ python demo/image_demo.py demo/demo.png configs/SSformer/SSformer_swin_512x512_1
 
 ## License
 Please check the LICENSE file. 
+
+## Acknowledgment
+
+Thanks to previous open-sourced repo: [mmsegmentation](https://github.com/open-mmlab/mmsegmentation) [Swin-Transformer](https://github.com/microsoft/Swin-Transformer) [SegFormer](https://github.com/NVlabs/SegFormer)
