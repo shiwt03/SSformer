@@ -55,7 +55,7 @@ If your folder structure is different, you may need to change the corresponding 
 
 The fold structure is recommended to be:
 ```none
-mmsegmentation
+SSformer
 ├── data
 │   ├── cityscapes
 │   │   ├── leftImg8bit
