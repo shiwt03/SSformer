@@ -83,7 +83,7 @@ By convention, `**labelTrainIds.png` are used for cityscapes training.
 MMsegmentation provided a [scripts](https://github.com/open-mmlab/mmsegmentation/blob/master/tools/convert_datasets/cityscapes.py) based on [cityscapesscripts](https://github.com/mcordts/cityscapesScripts)
 to generate `**labelTrainIds.png`.
 
-```python
+```shell
 # --nproc means 8 process for conversion, which could be omitted as well.
 python tools/convert_datasets/cityscapes.py data/cityscapes --nproc 8
 ```
@@ -105,7 +105,7 @@ Download [trained weights]().
 ### ADE20K
 
 Example: evaluate ```SSformer``` on ```ADE20K```:
-```python
+```shell
 # Single-gpu testing
 python tools/test.py configs/SSformer/SSformer_swin_512x512_160k_ADE20K.py /path/to/checkpoint_file
 ```
@@ -113,7 +113,7 @@ python tools/test.py configs/SSformer/SSformer_swin_512x512_160k_ADE20K.py /path
 ### Cityscapes
 
 Example: evaluate ```SSformer``` on ```Cityscapes```:
-```python
+```shell
 # Single-gpu testing
 python tools/test.py configs/SSformer/SSformer_swin_1024x1024_160k_Cityscapes.py /path/to/checkpoint_file
 ```
@@ -121,13 +121,13 @@ python tools/test.py configs/SSformer/SSformer_swin_1024x1024_160k_Cityscapes.py
 ## Training
 Download [weights]() pretrained on ImageNet-22K, and put them in a folder ```pretrained/```.
 Example: train ```SSFormer``` on ```ADE20K```:
-```python
+```shell
 # Single-gpu training
 python tools/train.py configs/SSformer/SSformer_swin_512x512_160k_ADE20K.py
 ```
 ## Visualize
 Here is a demo script to test a single image. More details refer to [MMSegmentation's Doc](https://mmsegmentation.readthedocs.io/en/latest/get_started.html).
-```shell
+```
 python demo/image_demo.py ${IMAGE_FILE} ${CONFIG_FILE} ${CHECKPOINT_FILE} [--device ${DEVICE_NAME}] [--palette-thr ${PALETTE}]
 ```
 
