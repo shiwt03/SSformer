@@ -80,7 +80,7 @@ SSformer
 The data could be found [here](https://www.cityscapes-dataset.com/downloads/) after registration.
 
 By convention, `**labelTrainIds.png` are used for cityscapes training.
-MMsegmentation provided a [scripts](https://github.com/open-mmlab/mmsegmentation/blob/master/tools/convert_datasets/cityscapes.py) based on [cityscapesscripts](https://github.com/mcordts/cityscapesScripts)
+MMsegmentation provided a [script](https://github.com/open-mmlab/mmsegmentation/blob/master/tools/convert_datasets/cityscapes.py) based on [cityscapesscripts](https://github.com/mcordts/cityscapesScripts)
 to generate `**labelTrainIds.png`.
 
 ```shell
@@ -93,7 +93,7 @@ Part of SSformer's segmentation results on Cityscapes:
 ### ADE20K
 
 The training and validation set of ADE20K could be download from this [link](http://data.csail.mit.edu/places/ADEchallenge/ADEChallengeData2016.zip).
-We may also download test set from [here](http://data.csail.mit.edu/places/ADEchallenge/release_test.zip).
+You may also download test set from [here](http://data.csail.mit.edu/places/ADEchallenge/release_test.zip).
 
 Part of SSformer's segmentation results on ADE20K:
 ![image](resources/SSformer_ADE20K.png)
