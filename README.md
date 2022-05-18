@@ -100,7 +100,7 @@ Part of SSformer's segmentation results on ADE20K:
 
 ## Evaluation
 
-Download [trained weights]().
+Download [trained weights](https://drive.google.com/drive/folders/1e_KoCUTD7AT20SIxbtOmd1ufFvCoAxC3?usp=sharing).
 
 ### ADE20K
 
@@ -119,7 +119,8 @@ python tools/test.py configs/SSformer/SSformer_swin_1024x1024_160k_Cityscapes.py
 ```
 
 ## Training
-Download [weights]() pretrained on ImageNet-22K, and put them in a folder ```pretrained/```.
+Download [weights](https://drive.google.com/drive/folders/1oZ4QO0sHhIymh4_8AHz29SXvyofkeIRh?usp=sharing) pretrained on ImageNet-22K, and put them in a folder ```pretrained/```.
+
 Example: train ```SSFormer``` on ```ADE20K```:
 ```shell
 # Single-gpu training
