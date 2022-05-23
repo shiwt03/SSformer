@@ -19,8 +19,8 @@ An example (works for me): ```CUDA 11.3``` and  ```pytorch 1.10.0```
 Here is a full script for setting up SSformer with conda and link the dataset path (supposing that your dataset path is $DATA_ROOT).
 
 ```shell
-conda create -n open-mmlab python=3.10 -y
-conda activate open-mmlab
+conda create -n SSformer python=3.10 -y
+conda activate SSformer
 conda install pytorch=1.11.0 torchvision cudatoolkit=11.3 -c pytorch
 pip install mmcv-full -f https://download.openmmlab.com/mmcv/dist/cu113/torch1.11.0/index.html
 git clone https://github.com/shiwt03/SSformer.git
@@ -32,17 +32,17 @@ ln -s $DATA_ROOT data
 
 #### Windows(Experimental)
 
-Here is a full script for setting up mmsegmentation with conda and link the dataset path (supposing that your dataset path is
+Here is a full script for setting up SSformer with conda and link the dataset path (supposing that your dataset path is
 %DATA_ROOT%. Notice: It must be an absolute path).
 
 ```shell
-conda create -n open-mmlab python=3.10 -y
-conda activate open-mmlab
+conda create -n SSformer python=3.10 -y
+conda activate SSformer
 conda install pytorch=1.11.0 torchvision cudatoolkit=11.3 -c pytorch
 set PATH=full\path\to\your\cpp\compiler;%PATH%
 pip install mmcv
-git clone https://github.com/open-mmlab/mmsegmentation.git
-cd mmsegmentation
+git clone https://github.com/shiwt03/SSformer.git
+cd SSformer
 pip install -e .  # or "python setup.py develop"
 mklink /D data %DATA_ROOT%
 ```
