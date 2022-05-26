@@ -107,7 +107,7 @@ Download [trained weights](https://drive.google.com/drive/folders/1e_KoCUTD7AT20
 Example: evaluate ```SSformer``` on ```ADE20K```:
 ```shell
 # Single-gpu testing
-python tools/test.py configs/SSformer/SSformer_swin_512x512_160k_ADE20K.py /path/to/checkpoint_file
+python tools/test.py configs/SSformer/SSformer_swin_512x512_160k_ade20k.py /path/to/checkpoint_file --show
 ```
 
 ### Cityscapes
@@ -115,7 +115,7 @@ python tools/test.py configs/SSformer/SSformer_swin_512x512_160k_ADE20K.py /path
 Example: evaluate ```SSformer``` on ```Cityscapes```:
 ```shell
 # Single-gpu testing
-python tools/test.py configs/SSformer/SSformer_swin_1024x1024_160k_Cityscapes.py /path/to/checkpoint_file
+python tools/test.py configs/SSformer/SSformer_swin_1024x1024_160k_Cityscapes.py /path/to/checkpoint_file --show
 ```
 
 ## Training
@@ -124,7 +124,7 @@ Download [weights](https://drive.google.com/drive/folders/1oZ4QO0sHhIymh4_8AHz29
 Example: train ```SSFormer``` on ```ADE20K```:
 ```shell
 # Single-gpu training
-python tools/train.py configs/SSformer/SSformer_swin_512x512_160k_ADE20K.py
+python tools/train.py configs/SSformer/SSformer_swin_512x512_160k_ade20k.py
 ```
 ## Visualize
 Here is a demo script to test a single image. More details refer to [MMSegmentation's Doc](https://mmsegmentation.readthedocs.io/en/latest/get_started.html).
@@ -135,7 +135,7 @@ python demo/image_demo.py ${IMAGE_FILE} ${CONFIG_FILE} ${CHECKPOINT_FILE} [--dev
 Example: visualize ```SSformer``` on ```CityScapes```: 
 
 ```shell
-python demo/image_demo.py demo/demo.png configs/SSformer/SSformer_swin_512x512_160k_ADE20K.py \
+python demo/image_demo.py demo/demo.png configs/SSformer/SSformer_swin_512x512_80k_Cityscapes.py \
 /path/to/checkpoint_file --device cuda:0 --palette cityscapes
 ```
 
