@@ -1,7 +1,7 @@
 _base_ = [
     '../_base_/datasets/cityscapes_1024x1024.py',
     '../_base_/default_runtime.py', 
-    '../_base_/schedules/schedule_160k.py'
+    '../_base_/schedules/schedule_80k.py'
 ]
 norm_cfg = dict(type='BN', requires_grad=True)
 backbone_norm_cfg = dict(type='LN', requires_grad=True)
